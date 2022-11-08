@@ -1,4 +1,14 @@
 
+#' get_mres_hic_dat
+#'
+#' @param dat_folder
+#' @param chromo
+#'
+#' @description Function to input multiresolution HiC data as a list of dataframes
+#' @return list of dataframes where each element is the HiC data at a particular resolution
+#' @export
+#'
+#' @examples
 get_mres_hic_dat<-function(dat_folder,chromo){
   chr_dat_l<-lapply(hub_res_set,function(x)read_delim(file = paste0(dat_folder,x,'/',chromo,'.txt'),delim = '\t',col_names = F))
   names(chr_dat_l)<-hub_res_set
