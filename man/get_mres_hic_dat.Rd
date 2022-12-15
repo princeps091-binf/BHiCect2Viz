@@ -4,10 +4,14 @@
 \alias{get_mres_hic_dat}
 \title{get_mres_hic_dat}
 \usage{
-get_mres_hic_dat(dat_folder, chromo)
+get_mres_hic_dat(dat_folder, chromo, hub_res_set)
 }
 \arguments{
-\item{chromo}{}
+\item{dat_folder}{folder containing the HiC data at multipl resolutions}
+
+\item{chromo}{chromosome name in UCSC format for the data to visualise}
+
+\item{hub_res_set}{resolutions at which we wish to visualise the data}
 }
 \value{
 list of dataframes where each element is the HiC data at a particular resolution
