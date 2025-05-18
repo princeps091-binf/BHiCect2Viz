@@ -1,12 +1,14 @@
 #' Build heatmap matrix
 #'
-#' @param cl_mat edge-list for cluster to visualise
-#' @param res resolution of the heatmap
-#' @param val_col column with colormap values
+#' This function creates a heatmap matrix from cluster data, which can be used for visualizing relationships or interactions between different elements in a dataset.
+#'
+#' @param cl_mat A data frame containing an edge-list of clusters. This means that each row should represent a connection between two elements (called `ego` and `alter`), along with their associated values.
+#' @param res A numeric value representing the resolution of the heatmap. This dictates the size of the bins used for grouping the data.
+#' @param val_col A string indicating the name of the column in `cl_mat` that contains the values to be used for coloring the heatmap.
 #'
 #' @importFrom rlang .data !!
-
-#' @return Sparse Matrix with cluster values for heatmap visualisation
+#'
+#' @return A sparse matrix where each entry corresponds to a cluster relationship, designed for heatmap visualization. The matrix will have cluster values filled in based on the provided edge-list.
 #' @export
 #'
 full_f_mat<-function(cl_mat,res,val_col){

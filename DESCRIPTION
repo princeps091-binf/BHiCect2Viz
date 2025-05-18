@@ -10,27 +10,27 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 biocViews:
 Imports: 
-    AnnotationHub,
     caret,
     data.tree,
     dplyr,
     furrr,
     future,
-    GenomicRanges,
     grDevices,
     grid,
     magrittr,
     Matrix,
-    plotgardener,
     purrr,
     RColorBrewer,
     readr,
     rlang,
+    tidyr,
     stringr,
     tibble,
-    tidyr,
+    viridisLite,
+    AnnotationHub,
+    plotgardener,
     TxDb.Hsapiens.UCSC.hg19.knownGene,
-    viridisLite
+    GenomicRanges
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
